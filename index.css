@@ -1,18 +1,22 @@
 body {
     font-family: 'Red Hat Display', sans-serif !important;
     background-image: url("images/pattern-background-desktop.svg");
-    background-size: cover;
-    background-position: center;
     background-repeat: no-repeat;
+    background-color: hsl(225, 100%, 94%) !important;
 }
 
 @media screen and (max-width: 768px) {
     body {
     background-image: url("images/pattern-background-mobile.svg");
-    background-size: cover;
-    background-position: top right;
     background-repeat: no-repeat;
     }
+}
+
+div.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 div.card {
